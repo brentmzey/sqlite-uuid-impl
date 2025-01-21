@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  },
+  "name": "sqlite3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "@types/sqlite3": "^3.1.11",
+    "typescript": "^5.7.2"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node uuidFunctions.js",
+    "compile-uuid-c": "gcc -shared -fPIC -o uuid.so uuid.c -lsqlite3"
+  },
+  "keywords": [],
+  "author": "Brent Zey",
+  "license": "ISC",
+  "description": ""
+}
